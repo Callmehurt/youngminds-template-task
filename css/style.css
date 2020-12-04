@@ -28,6 +28,11 @@ body {
   padding: 1px;
 }
 
+.header_top .left_ul li a {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+
 .divider {
   width: 1px;
   background-color: #9b9b9b;
