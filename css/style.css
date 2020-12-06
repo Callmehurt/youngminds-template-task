@@ -79,9 +79,7 @@ body {
   height: auto;
   padding-top: 2.2rem;
   padding-bottom: 2.5rem;
-  position: fixed;
   background-color: white;
-  position: sticky;
   height: auto;
   top: 0;
   z-index: 5;
@@ -179,7 +177,7 @@ body {
   height: 32px;
   border-radius: 5px;
   font-size: 14px;
-  width: 215px;
+  width: 216px;
   padding-left: 5px;
   font-weight: lighter;
 }
@@ -255,7 +253,7 @@ body {
   color: #2c2c2c;
   display: inline;
   margin: 0;
-  line-height: 40px;
+  line-height: 38px;
 }
 
 .padded-multiline p {
@@ -308,13 +306,31 @@ body {
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 20px;
 }
 
-.parent_flexBx .child_flexBx img {
+.parent_flexBx .child_flexBx .child_flexBx_img {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
+  height: 80px;
+  width: 85px;
+}
+
+.nd_row {
+  margin-top: 8px !important;
+}
+
+.parent_flexBx .child_flexBx img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+  /* position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0; */
 }
 
 .parent_flexBx .child_flexBx a p {
@@ -342,16 +358,19 @@ body {
 
 .banner .banner_text p {
   font-size: 35px;
-  transform: translate(25px, 20px);
+  transform: translate(28px, 22px);
   font-weight: 500;
   color: #323232;
 }
 
 .banner .banner_text h5 {
-  font-size: 16px;
-  margin-left: 25px;
+  font-size: 18px;
+  transform: translate(28px, 10px);
+  /* left: 2.8rem; */
   font-weight: 500;
   color: #323232;
+  /* position: absolute; */
+  top: 4.8rem;
 }
 
 .btn_wrapper {
@@ -377,7 +396,7 @@ body {
 }
 
 .footer_section {
-  height: 400px;
+  height: 393px;
   background-color: #1a1a1a;
   border-top: 4px solid #000000;
 }
@@ -392,7 +411,7 @@ body {
   font-size: 13px;
   font-weight: 200;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 40px;
 }
 
 .footer_section .about_section .footer_img {
@@ -400,7 +419,7 @@ body {
   width: 100%;
   border: 1px solid #4c4c4c;
   padding: 5px;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .footer_section .about_section .footer_img img {
@@ -415,12 +434,13 @@ body {
   line-height: 20px;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
+  line-height: 18px;
 }
 
 .footer_section .about_section ul {
   padding: 0;
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
 }
 
 .footer_section .about_section ul li {
@@ -490,12 +510,17 @@ body {
 }
 
 .footer_section .about_section form {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+}
+
+.footer_form {
+  padding-left: 0;
+  padding-right: 15px !important;
 }
 
 .footer_section .about_section form input[type="text"] {
   border-radius: 5px;
-  height: 32px;
+  height: 31px;
   border: none;
   background-color: #232323;
 }
@@ -516,6 +541,7 @@ body {
   background-color: #029bff;
   text-transform: uppercase;
   border-radius: 5px;
+  margin-top: -5px;
 }
 
 ::placeholder {

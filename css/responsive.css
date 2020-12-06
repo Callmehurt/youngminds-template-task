@@ -92,23 +92,37 @@
   }
 
   .banner {
+    /* height: 200px; */
     height: auto;
+    text-align: center;
   }
 
   .banner .banner_text p {
     text-align: center;
     transform: none;
+    margin-top: 10px;
+    padding-bottom: 0;
   }
 
   .banner .banner_text h5 {
-    position: relative;
-    text-align: center;
     transform: none;
+    text-align: center;
+    position: relative;
+    margin-top: -5rem;
+  }
+
+  .btn_wrapper {
+    margin-top: 3.5rem;
   }
 
   .footer_section {
     height: auto;
     padding-bottom: 2rem;
+  }
+
+  .footer_form {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
